@@ -43,7 +43,8 @@ export default {
           name: "Games",
           link: "#",
           here: false
-        },{
+        },
+        {
           name: "Collectibles",
           link: "#",
           here: false
