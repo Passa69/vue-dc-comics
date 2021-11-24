@@ -4,7 +4,9 @@
 
     <nav>
       <ul>
-        <li v-for="(comp, i) in navHeader" :key="i"><a href="comp.link">{{ comp.name }}</a></li>
+        <li v-for="(links, i) in navHeader" :key="i">
+          <a href="links.link" :class="links.here? 'selected' : ''">{{ links.name }}</a>
+        </li>
       </ul>
     </nav>
     
@@ -90,6 +92,7 @@ header {
     a {
       color: black;
       text-decoration: none;
+      padding: 0 5px 20px 5px;
 
       &.selected {
         color: #3190f9;
