@@ -1,32 +1,37 @@
 <template>
   <footer>
-    <div>
+    <div class="elem">
+        <div>
+            <ul>
+                <h4>DC Comics</h4>
+                <li v-for="(option, i) in Comics" :key="i">
+                    <a href="#">{{ option }}</a>
+                </li>
+            </ul>
+            <ul>
+                <h4>Shop</h4>
+                <li v-for="(option, i) in Shop" :key="i">
+                    <a href="#">{{ option }}</a>
+                </li>
+            </ul>
+        </div>
+
         <ul>
-            <h4>DC Comics</h4>
-            <li v-for="(option, i) in Comics" :key="i">
+            <h4>DC</h4>
+            <li v-for="(option, i) in DC" :key="i">
                 <a href="#">{{ option }}</a>
             </li>
         </ul>
         <ul>
-            <h4>Shop</h4>
-            <li v-for="(option, i) in Shop" :key="i">
+            <h4>Sites</h4>
+            <li v-for="(option, i) in Sites" :key="i">
                 <a href="#">{{ option }}</a>
             </li>
         </ul>
     </div>
 
-    <ul>
-        <h4>DC</h4>
-        <li v-for="(option, i) in DC" :key="i">
-            <a href="#">{{ option }}</a>
-        </li>
-    </ul>
-    <ul>
-        <h4>Sites</h4>
-        <li v-for="(option, i) in Sites" :key="i">
-            <a href="#">{{ option }}</a>
-        </li>
-    </ul>
+    <img src="../assets/img/dc-logo-bg.png" alt="">
+    
   </footer>
 </template>
 
@@ -79,10 +84,15 @@ footer {
     background-image: url('../assets/img/footer-bg.jpg');
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
 
     h4 {
        text-align: left;
        color: white; 
+    }
+
+    ul {
+        list-style-type: none;
     }
 
     li {
@@ -95,5 +105,15 @@ footer {
             text-decoration: none;
         }
     }
+}
+
+.elem {
+        display: flex;
+}
+
+img {
+    margin-right: 400px;
+    padding: 20px;
+    height: 300px;
 }
 </style>
