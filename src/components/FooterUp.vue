@@ -82,7 +82,7 @@ export default {
 <style scoped lang="scss">
 footer {
     background-image: url('../assets/img/footer-bg.jpg');
-    margin-top: 50px;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
 
@@ -108,11 +108,11 @@ footer {
 }
 
 .elem {
-        display: flex;
+    display: flex;
 }
 
 img {
-    margin-right: 400px;
+    margin-right: 200px;
     padding: 20px;
     height: 300px;
 }

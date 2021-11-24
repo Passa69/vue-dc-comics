@@ -1,11 +1,11 @@
 <template>
   <section>
-      <div class="items">
-        <ul>
+      <div>
+        <ul class="items">
           <li v-for="(item, i) in mainItems" :key="i">
-            <img :src="required(`./assets/img/${item.img}`)" alt="">
+            <img :src="require(`../assets/img/${item.img}`)" alt="">
 
-            <div>{{ item.title }}</div>
+            <span>{{ item.title }}</span>
           </li>
         </ul>
         
@@ -32,11 +32,11 @@ export default {
           title: "SUBSCRIPTION",
         },
         {
-          img: "buy-comics-subscritons.png",
+          img: "buy-comics-subscriptions.png",
           title: "COMIC SHOP LOCATOR",
         },
         {
-          img: "buy-comics-power-visa.png",
+          img: "buy-dc-power-visa.svg",
           title: "DC POWER VISA",
         }
       ]
@@ -54,6 +54,25 @@ section {
 
 .items {
   margin: 0 auto;
+  list-style-type: none;
   display: flex;
+  align-items: center;
+}
+
+img {
+  width: 50px;
+  vertical-align: center;
+}
+
+ul {
+  padding-top: 30px;
+}
+
+li {
+  margin: 0 50px;
+}
+
+span {
+  color: white;
 }
 </style>
