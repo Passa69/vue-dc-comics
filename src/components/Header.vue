@@ -1,6 +1,6 @@
 <template>
   <header>
-
+    <img src="../components/assets/img/dc-logo.png" alt="">
   </header>
 </template>
 

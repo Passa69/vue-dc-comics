@@ -1,7 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- componente header -->
     <Header/>
+
+    <!-- main -->
+    <main>
+      <!-- componenti main -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <!-- componenti footer -->
+    </footer>
   </div>
 </template>
 
