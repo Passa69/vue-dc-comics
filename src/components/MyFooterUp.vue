@@ -83,6 +83,7 @@ export default {
 footer {
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
 
@@ -101,7 +102,7 @@ footer {
         font-size: 10px;
 
         a {
-            color: #555350;
+            color: #74706e;
             text-decoration: none;
         }
     }

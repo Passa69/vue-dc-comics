@@ -104,7 +104,7 @@ export default {
 <style scoped lang="scss">
 div {
   width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   height: 500px;
   display: flex;
   flex-flow: row wrap;

@@ -21,22 +21,22 @@ export default {
 section {
 
     div {
-    margin: 25px 20px;
-    height: 150px;
-    width: 150px;
+        margin: 25px 20px;
+        height: 150px;
+        width: 150px;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
 
-    p {
-        font-size: 15px;
-        color: white;
+        p {
+            font-size: 15px;
+            color: white;
+        }
     }
-}
 }
 
 
