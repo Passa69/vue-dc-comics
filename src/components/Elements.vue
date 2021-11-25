@@ -74,5 +74,7 @@ li {
 
 span {
   color: white;
+  font-size: 15px;
+  margin-left: 5px;
 }
 </style>

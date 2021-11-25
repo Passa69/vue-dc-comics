@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 'FooterUp',
+  name: 'MyFooterUp',
   data() {
       return {
         Comics: [

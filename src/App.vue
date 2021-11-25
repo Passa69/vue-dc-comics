@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- componente header -->
-    <Header/>
+    <MyHeader/>
 
     <!-- main -->
     <main>
@@ -13,27 +13,27 @@
     <!-- footer -->
     <footer>
       <!-- componenti footer -->
-      <FooterUp/>
-      <FooterDown/>
+      <MyFooterUp/>
+      <MyFooterDown/>
     </footer>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
+import MyHeader from './components/MyHeader.vue';
 import Content from './components/Content.vue';
 import Elements from './components/Elements.vue';
-import FooterUp from './components/FooterUp.vue';
-import FooterDown from './components/FooterDown.vue';
+import MyFooterUp from './components/MyFooterUp.vue';
+import MyFooterDown from './components/MyFooterDown.vue';
 
 export default {
   name: 'App',
   components: {
-    Header,
+    MyHeader,
     Content,
     Elements,
-    FooterUp,
-    FooterDown
+    MyFooterUp,
+    MyFooterDown
   }
 }
 </script>
